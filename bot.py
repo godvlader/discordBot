@@ -60,6 +60,7 @@ intents.presences = True
 """
 
 intents = discord.Intents.default()
+intents.message_content=True
 
 """
 Uncomment this if you don't want to use prefix (normal) commands.
@@ -111,7 +112,7 @@ async def status_task() -> None:
     """
     Setup the game status task of the bot
     """
-    statuses = ["with you!", "with Krypton!", "with humans!"]
+    statuses = ["watching you!", "with Krypton!", "with humans!"]
     await bot.change_presence(activity=discord.Game(random.choice(statuses)))
 
 
