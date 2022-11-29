@@ -61,7 +61,7 @@ intents.presences = True
 
 intents = discord.Intents.default()
 intents.message_content=True
-#webhook update
+#webhook update 2
 """
 Uncomment this if you don't want to use prefix (normal) commands.
 It is recommended to use slash commands and therefore not use prefix commands.
